@@ -5,12 +5,43 @@ body {
     flex-direction: column;
 }
 
+img {
+   /* max-width: 100%;
+    height: auto;*/
+    height:inherit; /*this alone made it shrink down to fit the header container*/
+}
+
 .header {
     display: flex;
     justify-content: space-between;
-    height:72px;
+    align-items: center;
+    height:100px;
     border:solid 1px red; 
     background-color: #1F2937;
+    padding: 0px 40px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+  
+  }
+
+.left-links {
+    height: 100px;
+    width:auto;
+} /* thought redundant and tried removing and broke the cat icon; needed i think*/
+
+.right-links {
+    display: flex;
+    gap: 40px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border:solid 1px red; 
 }
 
 
