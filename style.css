@@ -1,0 +1,25 @@
+body {
+    margin:0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height:72px;
+    border:solid 1px red; 
+    background-color: #1F2937;
+}
+
+
+
+
+/*.imgbox a {
+
+}
+
+.info .subtext {
+    
+} */
