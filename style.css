@@ -1,6 +1,6 @@
 body {
     margin:0;
-    min-height:80vmax;
+    /*min-height:80vmax; */
     display: flex;
     flex-direction: column;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,6 +11,7 @@ img {
    /* max-width: 100%;
     height: auto;*/
     height:inherit; /*this alone made it shrink down to fit the header container*/
+    object-fit:contain;
 }
 
 .header {
@@ -51,6 +52,8 @@ a {
     background-position-x: center; */
     background-color: rgb(75, 74, 74);
     text-align: left;
+    padding:0px;
+    
     
  
 }
@@ -58,23 +61,57 @@ a {
 .left {
     display:flex;
     flex-direction: column;
-    border:solid 1px red; 
+
     justify-content: center;
     margin-left: 100px;
-    padding:50px;
+    padding:50px; 
+
 }
 .hero {
     font-size: 48px;
     font-weight:bolder;
     color: #F9FAF8;
 }
-.meowster {
+
+.subtext {
+    color:#E5E7EB;
+    font-size: 18px;
+}
+
+button {
+    background-color: #3882F6;
+}
+
+.canteen, .meowster {
     display:flex;
-    height: 200px;
     width:auto;
     align-items: center;
-    margin: 0px 100px;
+    margin: 0px 50px;
+
 }
+
+.meowster {
+    height:300px;
+    margin-right: 100px;
+}
+
+.canteen {
+    height:400px;
+    padding:0px 
+}
+
+.subtext, .button, .canteen, .meowster, .hero, .left, .left-links, .right-links {
+    border:solid 1px red; 
+}
+.info-container{
+    color:#1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+    background-image: url(img/tilebg2.png);
+    background-size: contain;
+    background-position-x: center; 
+}
+
 
 .info {
     display: flex;
@@ -83,6 +120,18 @@ a {
     justify-content: space-around;
     border:solid 1px red; 
     flex:10;
+ 
+
+}
+
+.info .imgbox {
+    display:flex;
+    font-size: 18px;
+    height: 250px;
+    width:auto;
+    border:solid 1px red; 
+    padding:25px 50px;
+
 }
 
 .quote-container {
@@ -91,6 +140,11 @@ a {
     align-items: center;
     border:solid 1px red; 
     flex:9;
+    padding:100px;
+    /*background-image: url(img/tilebg2.png);
+    background-size: contain;
+    background-position-x: center;    -not sure I'm a fan of this. */
+    background-color: #E5E7EB
 }
 
 .signup-container {
@@ -101,16 +155,13 @@ a {
     flex:8;
 }
 
-.imgbox {
-    height: 200px;
-    width:auto;
-}
-
 .footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     border:solid 1px red; 
+    background-color: #1F2937;
+    height:2em;
 
 
 }
