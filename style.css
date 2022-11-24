@@ -86,7 +86,6 @@ button {
 
 .canteen, .meowster {
     display:flex;
-    width:auto;
     align-items: center;
 
 }
