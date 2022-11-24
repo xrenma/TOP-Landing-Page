@@ -155,7 +155,7 @@ button {
 }
 
 .quote {
-background-color: antiquewhite;
+background-color: /*#e3d4b3;*/antiquewhite;
 /*background-image: url(https://styles.redditmedia.com/t5_2rron/styles/backgroundImage_ak0yy55m34a31.png);*/
 font-size: 36px;
 font-weight: lighter;
