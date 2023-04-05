@@ -18,9 +18,9 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:100px;
+    height:6em;
     background-color: #1F2937;
-    padding: 0px 40px;
+    padding: 0em 2.5em;
 }
 
 a {
@@ -30,13 +30,13 @@ a {
   }
 
 .left-links {
-    height: 100px;
+    height: 6em;
     width:auto;
 } /* thought redundant and tried removing and broke the cat icon; needed i think*/
 
 .right-links {
     display: flex;
-    gap: 40px;
+    gap: 2.5em;
 }
 
 .top-container {
@@ -44,14 +44,17 @@ a {
     justify-content:left;
     align-items: center;
     flex:10;
+    max-width:100%;
+    /*overflow-x: hidden; */
    /*background-image: url(img/canteen.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center; */
     background-color: rgb(75, 74, 74);
     text-align: left;
-    padding:0px;
-    gap:150px;
+    padding:0em;
+    /*gap:150px; removing helped with meowster jutting out too far 
+    when the window is resized+flexing*/
     
     
  
@@ -61,8 +64,9 @@ a {
     display:flex;
     flex-direction: column;
     text-align: center;
+
     justify-content: center;
-    margin-left: 50px;
+    margin-left: 5%;
 
 }
 .hero {
@@ -74,7 +78,7 @@ a {
 .subtext {
     color:#E5E7EB;
     font-size: 18px;
-}
+}[class*="container"]
 
 button {
     background-color: #3882F6;
@@ -85,14 +89,17 @@ button {
 }
 
 .canteen, .meowster {
-    display:flex;
     align-items: center;
-
+    max-width: 50%;
 }
 
 .meowster {
     height:300px;
-    margin: 0 100px;
+    margin:0 10%;
+    max-width: 100%;
+   /* max-width: 100%;
+    max-height: 100%; trying to solve meowster, didnt help*/
+    
 
 }
 
@@ -103,6 +110,21 @@ button {
 
 }
 
+.canteen img, .meowster img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .hero {
+      font-size: 36px;
+    }
+  
+    .subtext {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
 /*.top-container, .quote-container, .signup-container, .call, .bold, .subtext, .button, .canteen, .meowster, .hero, .left, .left-links, .quote, .quoter, .right-links, .info, .info-container, p, .header, .footer, .info img {
     border:solid 1px red; 
 }*/
@@ -221,6 +243,13 @@ border-radius: 25px;
 
 
 }
+
+/*.top-container, .info-container, .quote-container, .signup-container {
+    margin: 0 50px;
+       min-width:min-content (and other width variants)
+    This was another attempt to fix the meowster jutting out on resize... failed
+} */
+
 
 /*.imgbox a {
 
